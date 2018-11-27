@@ -1,3 +1,10 @@
+system-config-printer (1.4.6-2pardus1) unstable; urgency=medium
+
+  * Add patches
+  * Pardus CI integration
+
+ -- Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>  Tue, 27 Nov 2018 16:15:41 +0300
+
 system-config-printer (1.4.6-1) unstable; urgency=medium
 
   [ Dmitry Shachnev ]
