@@ -1,0 +1,624 @@
+From: =?utf-8?q?Yunusemre_=C5=9Eent=C3=BCrk?=
+ <yunusemre.senturk@pardus.org.tr>
+Date: Tue, 27 Nov 2018 16:09:58 +0300
+Subject: Update Turkish translations
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Signed-off-by: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>
+---
+ po/tr.po | 215 ++++++++++++++++++++++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 177 insertions(+), 38 deletions(-)
+
+diff --git a/po/tr.po b/po/tr.po
+index ffa27e0..e9589f1 100644
+--- a/po/tr.po
++++ b/po/tr.po
+@@ -5,23 +5,23 @@
+ # Translators:
+ # Bahadir Yagan <bahadir.yagan@mentorsystem.com>, 2004
+ # Dimitris Glezos <glezos@indifex.com>, 2011
+-# Hasan Alp İNAN <hasanalpinan@gmail.com>, 2011-2012
+-# Nilgün Belma Bugüner <nilgun@superonline.com>, 2002-2003
+-# Onuralp SEZER <thunderbirdtr@gmail.com>, 2012,2014
++# Onuralp SEZER <thunderbirdtr@gmail.com>, 2012
++# Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>, 2017, 2018.
++#
+ msgid ""
+ msgstr ""
+-"Project-Id-Version: system-config-printer\n"
++"Project-Id-Version:  \n"
+ "Report-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\n"
+-"POT-Creation-Date: 2014-10-17 16:30+0100\n"
+-"PO-Revision-Date: 2014-04-30 10:56+0000\n"
+-"Last-Translator: Onuralp SEZER <thunderbirdtr@gmail.com>\n"
+-"Language-Team: Turkish (http://www.transifex.com/projects/p/system-config-"
+-"printer/language/tr/)\n"
++"POT-Creation-Date: 2018-11-27 15:51+0300\n"
++"PO-Revision-Date: 2018-11-27 16:08+0300\n"
++"Last-Translator: Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>\n"
++"Language-Team: Türkçe <>\n"
+ "Language: tr\n"
+ "MIME-Version: 1.0\n"
+ "Content-Type: text/plain; charset=UTF-8\n"
+ "Content-Transfer-Encoding: 8bit\n"
+-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
++"Plural-Forms: nplurals=2; plural=(n != 1);\n"
++"X-Generator: Gtranslator 2.91.7\n"
+ 
+ #: ../asyncipp.py:467 ../authconn.py:451 ../authconn.py:453
+ #: ../errordialogs.py:67 ../pysmb.py:91 ../pysmb.py:93
+@@ -612,7 +612,7 @@ msgstr "Sürücü Değiştir"
+ 
+ #: ../newprinter.py:720
+ msgid "Download Printer Driver"
+-msgstr ""
++msgstr "Yazıcı Sürücüsü indir"
+ 
+ #: ../newprinter.py:729 ../newprinter.py:2036 ../newprinter.py:2041
+ msgid "fetching device list"
+@@ -621,11 +621,11 @@ msgstr "aygıt listesi alınıyor"
+ #: ../newprinter.py:969
+ #, python-format
+ msgid "Installing driver %s"
+-msgstr ""
++msgstr "%s sürücüsü yükleniyor"
+ 
+ #: ../newprinter.py:977
+ msgid "Installing ..."
+-msgstr ""
++msgstr "Yükleniyor ..."
+ 
+ #: ../newprinter.py:1325 ../newprinter.py:3039 ../newprinter.py:3267
+ #: ../ppdsloader.py:86
+@@ -692,7 +692,7 @@ msgstr ""
+ #: ../newprinter.py:2411
+ #, python-format
+ msgid "Verification requires the %s module"
+-msgstr ""
++msgstr "Doğrulama, %s modülünü gerektirir"
+ 
+ #: ../newprinter.py:2449
+ msgid "Allow all incoming SMB/CIFS browse packets"
+@@ -798,12 +798,16 @@ msgid ""
+ "HPLIP software driving a printer, or the printer function of a multi-"
+ "function device."
+ msgstr ""
++"HPLIP yazılımı bir yazıcı veya çok işlevli bir cihazın yazıcı "
++"işlevinikullanıyor."
+ 
+ #: ../newprinter.py:2902
+ msgid ""
+ "HPLIP software driving a fax machine, or the fax function of a multi-"
+ "function device."
+ msgstr ""
++"HPLIP yazılımı bir fax makinesi veya çok işlevli bir cihazın fax "
++"işlevinikullanıyor."
+ 
+ #: ../newprinter.py:2905
+ msgid "Local printer detected by the Hardware Abstraction Layer (HAL)."
+@@ -1517,13 +1521,13 @@ msgid "Maintenance command submitted as job %d"
+ msgstr "Bakım komutu görev %d olarak gönderildi"
+ 
+ #: ../printerproperties.py:1333
+-#, fuzzy
+ msgid "Raw Queue"
+-msgstr "Kuyruk:"
++msgstr "İşlenmemiş Kuyruk"
+ 
+ #: ../printerproperties.py:1334
+ msgid "Unable to get queue details. Treating queue as raw."
+ msgstr ""
++"Kuyruk ayrıntıları alınamadı. Kuyruk, işlenmemiş gibi değerlendiriliyor."
+ 
+ #: ../printerproperties.py:1346 ../printerproperties.py:1351
+ #: ../printerproperties.py:1448
+@@ -1642,7 +1646,7 @@ msgstr "_Yeni"
+ #: ../system-config-printer.py:707
+ #, python-format
+ msgid "Print Settings - %s"
+-msgstr ""
++msgstr "Yazıcı ayarları - %s"
+ 
+ #: ../system-config-printer.py:710
+ #, python-format
+@@ -1680,7 +1684,7 @@ msgstr "Hizmet sistemi kullanılabilir değil"
+ 
+ #: ../system-config-printer.py:1062
+ msgid "Cannot start service on remote server"
+-msgstr ""
++msgstr "Uzak sunucuda hizmet başlatılamıyor"
+ 
+ #: ../system-config-printer.py:1110 ../ui/ConnectingDialog.ui.h:4
+ #, no-c-format, python-format
+@@ -1798,7 +1802,7 @@ msgstr ""
+ 
+ #: ../ui/AboutDialog.ui.h:1
+ msgid "Copyright © 2006-2012 Red Hat, Inc."
+-msgstr ""
++msgstr "Telif Hakkı © 2006-2012 Red Hat, Inc."
+ 
+ #: ../ui/AboutDialog.ui.h:2
+ msgid "A CUPS configuration tool."
+@@ -1820,12 +1824,26 @@ msgid ""
+ "this program; if not, write to the Free Software Foundation, Inc., 51 "
+ "Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA."
+ msgstr ""
++"Bu program ücretsiz bir yazılımdır; Özgür Yazılım Vakfı tarafından "
++"yayımlanan GNU Genel Kamu Lisansı şartlarına göre yeniden dağıtabilir ve / "
++"veya değiştirebilirsiniz. Lisansın 2 numaralı sürümü veya (seçimlerinize "
++"göre) herhangi bir sonraki sürümü.\n"
++"\n"
++"Bu program yararlı olacağı umuduyla dağıtılır, ancak HERHANGİ BİR GARANTİ "
++"OLMAKSIZIN; SATILABİLİRLİK veya BELİRLİ BİR AMACA UYGUNLUĞU'nun zımni "
++"garantisi dahi olmadan. Daha fazla bilgi için GNU Genel Kamu Lisansına "
++"bakınız.\n"
++"\n"
++"Bu programla birlikte GNU Genel Kamu Lisansının bir kopyasını almış "
++"olmalısınız; eğer değilse, Free Software Foundation, Inc., 51 Franklin "
++"Street, Beşinci Kat, Boston, MA 02110-1301, ABD'ye yazın."
+ 
+ #. TRANSLATORS: Replace this string with your names, one name per line.  Thank you very much for your effort on translating system-config-printer and all our other tools!
+ #: ../ui/AboutDialog.ui.h:9
+ msgid "translator-credits"
+ msgstr ""
+-"Hasan Alp İNAN <hasanalpinan@gmail.com>, 2010, 2011. Bahadir Yagan <bahadir."
++"Yunusemre Şentürk <yunusemre.senturk@pardus.org.tr>, 2017.Hasan Alp İNAN "
++"<hasanalpinan@gmail.com>, 2010, 2011. Bahadir Yagan <bahadir."
+ "yagan@mentorsystem.com>, 2004. Nilgün Belma Bugüner <nilgun@superonline."
+ "com>, 2002, 2003. "
+ 
+@@ -2077,6 +2095,11 @@ msgid ""
+ "provided PPD files provide better access to the specific features of the "
+ "printer."
+ msgstr ""
++"Foomatic yazıcı veritabanı, üretici tarafından sağlanan PostScript Yazıcı "
++"Tanımlaması (PPD) dosyalarını içerir ve aynı zamanda çok sayıda (non "
++"PostScript) yazıcı için PPD dosyası oluşturabilir. Ancak genel üreticiler "
++"tarafından sağlanan PPD dosyaları, yazıcının belirli özelliklerine daha iyi "
++"erişmenizi sağlar."
+ 
+ #: ../ui/NewPrinterWindow.ui.h:55
+ msgid ""
+@@ -2084,6 +2107,9 @@ msgid ""
+ "disk that comes with the printer. For PostScript printers they are often "
+ "part of the Windows<sup>®</sup> driver."
+ msgstr ""
++"PostScript Yazıcı Tanımı (PPD) dosyaları genellikle yazıcıyla birlikte gelen "
++"sürücü diskinde bulunur. PostScript yazıcıları için genellikle "
++"Windows<sup>®</sup> sürücüsünün bir parçasıdır."
+ 
+ #: ../ui/NewPrinterWindow.ui.h:56
+ msgid "Make and model:"
+@@ -2134,6 +2160,8 @@ msgid ""
+ "This way all current option settings will be lost. The default settings of "
+ "the new PPD will be used. "
+ msgstr ""
++"Bu şekilde mevcut tüm seçenek ayarları kaybolacaktır. Yeni PPD'nin "
++"varsayılan ayarları kullanılacaktır."
+ 
+ #: ../ui/NewPrinterWindow.ui.h:68
+ msgid "Try to copy the option settings over from the old PPD. "
+@@ -2145,6 +2173,9 @@ msgid ""
+ "meaning. Settings of options that are not present in the new PPD will be "
+ "lost and options only present in the new PPD will be set to default."
+ msgstr ""
++"Bu, aynı ada sahip seçeneklerin aynı anlama sahip olduğu varsayılarak "
++"yapıldı.Yeni PPD'de mevcut olmayan seçeneklerin ayarları kaybolacak ve "
++"yalnızca yeni PPD'de bulunan seçenekler varsayılana ayarlanacaktır."
+ 
+ #: ../ui/NewPrinterWindow.ui.h:70
+ msgid "Change PPD"
+@@ -2158,7 +2189,7 @@ msgstr "<span weight=\"bold\" size=\"larger\">Kurulabilir Seçenekler</span>"
+ msgid ""
+ "This driver supports additional hardware that may be installed in the "
+ "printer."
+-msgstr ""
++msgstr "Bu sürücü yazıcıya yüklenebilecek ek donanımı destekler."
+ 
+ #: ../ui/NewPrinterWindow.ui.h:73 ../ui/PrinterPropertiesDialog.ui.h:40
+ msgid "Installed Options"
+@@ -2175,6 +2206,8 @@ msgid ""
+ "be covered by their commercial support.  See the support and license terms "
+ "of the driver's supplier."
+ msgstr ""
++"Bu sürücüler işletim sistemi tedarikçinizden gelmez ve ticari desteğiyle "
++"korunmazlar. Sürücü tedarikçisinin destek ve lisans koşullarına bakın."
+ 
+ #: ../ui/NewPrinterWindow.ui.h:76
+ msgid "<b>Note</b>"
+@@ -2189,6 +2222,8 @@ msgid ""
+ "With this choice no driver download will be performed. In the next steps a "
+ "locally installed driver will be selected."
+ msgstr ""
++"Bu seçenekle sürücü indirmesi gerçekleştirilmez. Sonraki adımlarda, yerel "
++"olarak yüklenen bir sürücü seçilecektir."
+ 
+ #: ../ui/NewPrinterWindow.ui.h:80 ../ui/PrinterPropertiesDialog.ui.h:2
+ msgid "Description:"
+@@ -2330,7 +2365,7 @@ msgstr "Etkin"
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:20
+ msgid "Accepting jobs"
+-msgstr "İşler kabul ediliyor"
++msgstr "İşleri Kabul Et"
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:21
+ msgid "Shared"
+@@ -2350,7 +2385,7 @@ msgstr "<b>Durum</b>"
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:25
+ msgid "Error Policy: \t"
+-msgstr "Hata Politikası: \t"
++msgstr "Hata Politikası: "
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:26
+ msgid "Operation Policy:"
+@@ -2406,6 +2441,9 @@ msgid ""
+ "print server will have these options added if they are not already set by "
+ "the application."
+ msgstr ""
++"Bu yazıcı için varsayılan iş seçeneklerini belirleyin. Bu yazıcı sunucusuna "
++"gelen işlerin, uygulama tarafından önceden ayarlanmadıklarında bu seçenekler "
++"eklenecektir."
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:43
+ msgid "Copies:"
+@@ -2417,7 +2455,7 @@ msgstr "Yönlendirme:"
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:45
+ msgid "Pages per side:"
+-msgstr ""
++msgstr "Taraf başına sayfa sayısı:"
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:46
+ msgid "Scale to fit"
+@@ -2425,7 +2463,7 @@ msgstr "Sığdırmak için ölçekle"
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:47
+ msgid "Pages per side layout:"
+-msgstr ""
++msgstr "Taraf başına sayfa düzeni:"
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:48
+ msgid "Brightness:"
+@@ -2437,7 +2475,7 @@ msgstr "Sıfırla"
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:50
+ msgid "Finishings:"
+-msgstr ""
++msgstr "Tamamlamalar:"
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:51
+ msgid "Job priority:"
+@@ -2469,7 +2507,7 @@ msgstr "Baskı çözünürlüğü:"
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:58
+ msgid "Output bin:"
+-msgstr ""
++msgstr "Çıktı bin:"
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:59
+ msgid "More"
+@@ -2533,7 +2571,7 @@ msgstr "Güzel yazdırma"
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:74
+ msgid "Word wrap"
+-msgstr ""
++msgstr "Sözcük sıkıştırma"
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:75
+ msgid "Columns:"
+@@ -2554,6 +2592,8 @@ msgstr "<b>Metin Seçenekleri</b>"
+ #: ../ui/PrinterPropertiesDialog.ui.h:79
+ msgid "To add a new option, enter its name in the box below and click to add."
+ msgstr ""
++"Yeni bir seçenek eklemek için, aşağıdaki kutuya adını girin ve ekle ye "
++"tıklayın."
+ 
+ #: ../ui/PrinterPropertiesDialog.ui.h:80
+ msgid "<b>Other Options (Advanced)</b>"
+@@ -2651,7 +2691,7 @@ msgstr ""
+ 
+ #: ../ui/ServerSettingsDialog.ui.h:7
+ msgid "Save _debugging information for troubleshooting"
+-msgstr ""
++msgstr "Sorun giderme işlemi için hata ayıklama bilgilerini kaydet"
+ 
+ #: ../ui/ServerSettingsDialog.ui.h:8
+ msgid "Do not preserve job history"
+@@ -2659,7 +2699,7 @@ msgstr "İş geçmişini saklama"
+ 
+ #: ../ui/ServerSettingsDialog.ui.h:9
+ msgid "Preserve job history but not files"
+-msgstr ""
++msgstr "Dosyaları değil iş geçmişini koru"
+ 
+ #: ../ui/ServerSettingsDialog.ui.h:10
+ msgid "Preserve job files (allow reprinting)"
+@@ -2674,6 +2714,8 @@ msgid ""
+ "Usually print servers broadcast their queues. Specify print servers below to "
+ "periodically ask for queues instead."
+ msgstr ""
++"Genellikle, yazıcı sunucuları kuyruklarını yayınlar. Bunun yerine düzenli "
++"aralıklarla kuyruk sormak için aşağıdaki yazıcı sunucularını belirtin."
+ 
+ #: ../ui/ServerSettingsDialog.ui.h:13
+ msgid "<b>Browse servers</b>"
+@@ -2705,7 +2747,7 @@ msgstr "Lütfen Bekleyin"
+ 
+ #: ../system-config-printer.desktop.in.h:1
+ msgid "Print Settings"
+-msgstr ""
++msgstr "Yazıcı Ayarları"
+ 
+ #: ../system-config-printer.desktop.in.h:2
+ msgid "Configure printers"
+@@ -2817,7 +2859,7 @@ msgstr "Yazıcı yapılandırma hatası"
+ #: ../statereason.py:120
+ #, python-format
+ msgid "There is a missing print filter for printer '%s'."
+-msgstr ""
++msgstr "'%s' yazıcısı için eksik bir yazdırma filtresi var."
+ 
+ #: ../statereason.py:132
+ msgid "Printer report"
+@@ -2853,22 +2895,27 @@ msgid ""
+ "To start this tool, select System->Administration->Print Settings from the "
+ "main menu."
+ msgstr ""
++"Bu aracı başlatmak için, ana menüden Sistem->Yönetim->Yazıcı Ayarları seçin."
+ 
+ #: ../troubleshoot/CheckLocalServerPublishing.py:28
+ msgid "Server Not Exporting Printers"
+-msgstr ""
++msgstr "Sunucu Yazıcıları Dışa Aktarmıyor"
+ 
+ #: ../troubleshoot/CheckLocalServerPublishing.py:29
+ msgid ""
+ "Although one or more printers are marked as being shared, this print server "
+ "is not exporting shared printers to the network."
+ msgstr ""
++"Bir veya daha fazla yazıcı paylaştırılmış olarak işaretlenmiş olsa da, bu "
++"yazıcı sunucusu paylaşılan yazıcıları ağa vermiyor."
+ 
+ #: ../troubleshoot/CheckLocalServerPublishing.py:33
+ msgid ""
+ "Enable the 'Publish shared printers connected to this system' option in the "
+ "server settings using the printing administration tool."
+ msgstr ""
++"Yazdırma yönetim aracını kullanarak sunucu ayarlarında 'Bu sisteme bağlı "
++"paylaşılmış yazıcıları yayınla' seçeneğini etkinleştirin."
+ 
+ #: ../troubleshoot/CheckPPDSanity.py:47 ../applet.py:179
+ msgid "Install"
+@@ -2884,12 +2931,14 @@ msgid ""
+ "The PPD file for printer '%s' does not conform to the specification.  "
+ "Possible reason follows:"
+ msgstr ""
++"'%s' yazıcısı için PPD dosyası tanımlamalara uymuyor. Olası sebep şu "
++"şekildedir:"
+ 
+ #. Perhaps cupstestppd is not in the path.
+ #: ../troubleshoot/CheckPPDSanity.py:116
+ #, python-format
+ msgid "There is a problem with the PPD file for printer '%s'."
+-msgstr ""
++msgstr "'%s' yazıcısı için PPD dosyasında bir problem var."
+ 
+ #: ../troubleshoot/CheckPPDSanity.py:126
+ msgid "Missing Printer Driver"
+@@ -2912,6 +2961,8 @@ msgid ""
+ "Please select the network printer you are trying to use from the list below. "
+ "If it does not appear in the list, select 'Not listed'."
+ msgstr ""
++"Lütfen aşağıdaki listeden kullanmak istediğiniz ağ yazıcısını seçin. Listede "
++"yoksa, 'Listelenmemiş' seçeneğini seçin."
+ 
+ #: ../troubleshoot/ChooseNetworkPrinter.py:41
+ #: ../troubleshoot/ChoosePrinter.py:47 ../troubleshoot/DeviceListed.py:45
+@@ -2921,7 +2972,7 @@ msgstr "Bilgi"
+ #: ../troubleshoot/ChooseNetworkPrinter.py:75
+ #: ../troubleshoot/ChoosePrinter.py:71 ../troubleshoot/DeviceListed.py:77
+ msgid "Not listed"
+-msgstr "Listelenmeyen"
++msgstr "Listelenmemiş"
+ 
+ #: ../troubleshoot/ChoosePrinter.py:37
+ msgid "Choose Printer"
+@@ -2932,6 +2983,8 @@ msgid ""
+ "Please select the printer you are trying to use from the list below. If it "
+ "does not appear in the list, select 'Not listed'."
+ msgstr ""
++"Lütfen aşağıdaki listeden kullanmak istediğiniz yazıcıyı seçin. Listede "
++"yoksa, 'Listelenmemiş' seçeneğini seçin."
+ 
+ #: ../troubleshoot/DeviceListed.py:37
+ msgid "Choose Device"
+@@ -2942,6 +2995,8 @@ msgid ""
+ "Please select the device you want to use from the list below. If it does not "
+ "appear in the list, select 'Not listed'."
+ msgstr ""
++"Lütfen aşağıdaki listeden kullanmak istediğiniz cihazı seçin. Listede yoksa, "
++"'Listelenmemiş' seçeneğini seçin."
+ 
+ #: ../troubleshoot/ErrorLogCheckpoint.py:39
+ msgid "Debugging"
+@@ -2952,6 +3007,9 @@ msgid ""
+ "This step will enable debugging output from the CUPS scheduler.  This may "
+ "cause the scheduler to restart.  Click the button below to enable debugging."
+ msgstr ""
++"Bu adım, CUPS zamanlayıcıdan gelen hata ayıklama çıktısını "
++"etkinleştirecektir. Bu, zamanlayıcıyı yeniden başlatmaya neden olabilir. "
++"Hata ayıklamayı etkinleştirmek için aşağıdaki düğmeyi tıklayın."
+ 
+ #: ../troubleshoot/ErrorLogCheckpoint.py:44
+ msgid "Enable Debugging"
+@@ -2982,6 +3040,8 @@ msgid ""
+ "The page size for the print job was not the printer's default page size.  If "
+ "this is not intentional it may cause alignment problems."
+ msgstr ""
++"Yazdırma işi için sayfa boyutu yazıcının varsayılan sayfa boyutu değildi. "
++"Eğer bu kasıtsız değilse hizalama problemlerine neden olabilir."
+ 
+ #: ../troubleshoot/Locale.py:44
+ msgid "Print job page size:"
+@@ -3069,7 +3129,7 @@ msgstr "Hayır"
+ #: ../troubleshoot/PrintTestPage.py:144
+ #, python-format
+ msgid "Remember to load paper of type '%s' into the printer first."
+-msgstr ""
++msgstr "'%s' türündeki kağıdı önce yazıcıya yerleştirmeyi unutmayın."
+ 
+ #: ../troubleshoot/PrintTestPage.py:433
+ msgid "Error submitting test page"
+@@ -3083,7 +3143,7 @@ msgstr "Çıkan sonuç: '%s'."
+ 
+ #: ../troubleshoot/QueueNotEnabled.py:60
+ msgid "This may be due to the printer being disconnected or switched off."
+-msgstr ""
++msgstr "Bu, yazıcının bağlantısının kesilmesi veya kapatıldığı için olabilir."
+ 
+ #: ../troubleshoot/QueueNotEnabled.py:64
+ msgid "Queue Not Enabled"
+@@ -3099,6 +3159,8 @@ msgid ""
+ "To enable it, select the 'Enabled' checkbox in the 'Policies' tab for the "
+ "printer in the printer administration tool."
+ msgstr ""
++"Etkinleştirmek için, yazıcı yönetim aracındaki yazıcının 'İlkeler' "
++"sekmesindeki 'Etkin' onay kutusunu seçin."
+ 
+ #: ../troubleshoot/QueueRejectingJobs.py:33
+ msgid "Queue Rejecting Jobs"
+@@ -3114,6 +3176,8 @@ msgid ""
+ "To make the queue accept jobs, select the 'Accepting Jobs' checkbox in the "
+ "'Policies' tab for the printer in the printer administration tool."
+ msgstr ""
++"Kuyruk işlerini kabul etmek için, yazıcı yönetim aracındaki yazıcının "
++"'İlkeler' sekmesindeki 'İşler Kabul Et' onay kutusunu işaretleyin."
+ 
+ #: ../troubleshoot/RemoteAddress.py:28
+ msgid "Remote Address"
+@@ -3143,6 +3207,8 @@ msgid ""
+ "choose System->Administration->Services from the main menu and look for the "
+ "'cups' service."
+ msgstr ""
++"CUPS yazdırma biriktiricisi çalışmıyor gibi görünüyor. Bunu düzeltmek için, "
++"ana menüden Sistem->Yönetim->Hizmetler'i seçin ve 'cups' servisini arayın."
+ 
+ #: ../troubleshoot/ServerFirewalled.py:28
+ msgid "Check Server Firewall"
+@@ -3158,6 +3224,8 @@ msgid ""
+ "Please check to see if a firewall or router configuration is blocking TCP "
+ "port %d on server '%s'."
+ msgstr ""
++"Lütfen bir güvenlik duvarı veya yönlendirici yapılandırmasının %d TCP "
++"portunu '%s' sunucusunda engelleyip engellemediğini kontrol edin."
+ 
+ #: ../troubleshoot/Shrug.py:28
+ msgid "Sorry!"
+@@ -3169,6 +3237,9 @@ msgid ""
+ "collected together with other useful information.  If you would like to "
+ "report a bug, please include this information."
+ msgstr ""
++"Bu soruna bariz bir çözüm bulunmamaktadır. Yanıtlarınız diğer faydalı "
++"bilgilerle birlikte toplanmıştır. Bir hata bildirmek isterseniz lütfen bu "
++"bilgileri ekleyin."
+ 
+ #: ../troubleshoot/Shrug.py:36
+ msgid "Diagnostic Output (Advanced)"
+@@ -3191,6 +3262,8 @@ msgid ""
+ "The next few screens will contain some questions about your problem with "
+ "printing. Based on your answers a solution may be suggested."
+ msgstr ""
++"Sonraki birkaç ekran, yazdırma sorununuzla ilgili bazı sorular içermektedir. "
++"Yanıtlarınıza dayanarak bir çözüm önerilebilir."
+ 
+ #: ../troubleshoot/Welcome.py:51
+ msgid "Click 'Forward' to begin."
+@@ -3202,7 +3275,7 @@ msgstr "Yeni yazıcı yapılandırması"
+ 
+ #: ../applet.py:84
+ msgid "Please wait..."
+-msgstr "Lütfen bekleyin..."
++msgstr "Lütfen bekelyin..."
+ 
+ #. name is a URI, no queue was generated, because no suitable
+ #. driver was found
+@@ -3267,9 +3340,75 @@ msgid ""
+ "With system-config-printer you can add, edit and delete printer queues. It "
+ "allows you to choose the connection method and the printer driver."
+ msgstr ""
++"Yazıcı Ayarları ile yazıcı kuyruklarını ekleyebilir, düzenleyebilir ve "
++"silebilirsiniz. Bağlantı yöntemini ve yazıcı sürücüsünü seçmenizi sağlar."
+ 
+ #: ../system-config-printer.appdata.xml.in.h:2
+ msgid ""
+ "For each queue, you can adjust the default page size and other driver "
+ "options, as well as seeing ink/toner levels and status messages."
+ msgstr ""
++"Her kuyruk için varsayılan sayfa boyutunu ve diğer sürücü seçeneklerini, "
++"ayrıca mürekkep / toner seviyelerini ve durum mesajlarını görebilirsiniz."
++
++#~ msgid "Add"
++#~ msgstr "Ekle"
++
++#~ msgid "Refresh"
++#~ msgstr "Tazele"
++
++#~ msgid "Connect"
++#~ msgstr "Bağlan"
++
++#~ msgid "Close"
++#~ msgstr "Kapat"
++
++#~ msgid "_OK"
++#~ msgstr "_Tamam"
++
++#~ msgid "Find"
++#~ msgstr "Bul"
++
++#~ msgid "_Back"
++#~ msgstr "_Geri"
++
++#~ msgid "_Apply"
++#~ msgstr "_Uygula"
++
++#~ msgid "_Forward"
++#~ msgstr "İleri"
++
++#~ msgid "_Close"
++#~ msgstr "_Kapat"
++
++#~ msgid "_Add"
++#~ msgstr "_Ekle"
++
++#~ msgid "About"
++#~ msgstr "Hakkında"
++
++#~ msgid "Remove"
++#~ msgstr "Kaldır"
++
++#~ msgid "_Quit"
++#~ msgstr "Çı_k"
++
++#~ msgid "Retrieve Journal Entries"
++#~ msgstr "Günlük Girdilerini Al"
++
++#~ msgid ""
++#~ "No system journal entries were found. This may be because you are not an "
++#~ "administrator. To fetch journal entries please run this command:"
++#~ msgstr ""
++#~ "Hiçbir sistem günlüğü girişi bulunamadı. Bunun nedeni, bir yönetici "
++#~ "olmadığınız olabilir. Günlük girdilerini almak için lütfen şu komutu "
++#~ "çalıştırın:"
++
++#~ msgid "Configure printer queues"
++#~ msgstr "Yazıcı kuyruklarını yapılandır"
++
++#~ msgid "Cancel"
++#~ msgstr "İptal"
++
++#~ msgid "Delete"
++#~ msgstr "Sil"

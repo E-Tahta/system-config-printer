@@ -1,8 +1,10 @@
-From 9a81dd1de3afaf30eec92045429029103823b577 Mon Sep 17 00:00:00 2001
 From: Tim Waugh <twaugh@redhat.com>
 Date: Wed, 22 Oct 2014 12:51:48 +0100
 Subject: ppdcache: return exception rather than looping.
 
+---
+ ppdcache.py | 22 +++++++++++++++-------
+ 1 file changed, 15 insertions(+), 7 deletions(-)
 
 diff --git a/ppdcache.py b/ppdcache.py
 index 6c54e77..a9ba499 100644
@@ -56,6 +58,3 @@ index 6c54e77..a9ba499 100644
  
              # Now fetch it from our own cache.
              self.fetch_ppd (name, callback, check_uptodate=False)
--- 
-cgit v0.10.2
-

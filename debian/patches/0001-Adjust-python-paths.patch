@@ -1,14 +1,14 @@
-From: =?UTF-8?q?Guido=20G=C3=BCnther?= <agx@sigxcpu.org>
+From: =?utf-8?q?Guido_G=C3=BCnther?= <agx@sigxcpu.org>
 Date: Tue, 13 Dec 2011 20:23:42 +0100
 Subject: Adjust python paths
 
 ---
- applet.py                |    1 +
- system-config-printer.py |    2 ++
- 2 files changed, 3 insertions(+), 0 deletions(-)
+ applet.py                | 1 +
+ system-config-printer.py | 2 ++
+ 2 files changed, 3 insertions(+)
 
 diff --git a/applet.py b/applet.py
-index 221291a..61b3a97 100644
+index b177820..b97388a 100644
 --- a/applet.py
 +++ b/applet.py
 @@ -20,6 +20,7 @@
@@ -20,7 +20,7 @@ index 221291a..61b3a97 100644
  
  import dbus
 diff --git a/system-config-printer.py b/system-config-printer.py
-index 4b26c07..45fdeb3 100755
+index 22a46c1..b067c1b 100755
 --- a/system-config-printer.py
 +++ b/system-config-printer.py
 @@ -22,6 +22,8 @@

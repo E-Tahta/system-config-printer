@@ -1,7 +1,13 @@
-Description: Fix the package names that PackageKit should try to install
-Author: Laurent Bigonville <bigon@debian.org>
-Forwarded: not-needed
+From: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Date: Tue, 27 Nov 2018 16:09:31 +0300
+Subject: 0007-fix-pk-package-name
 
+---
+ newprinter.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/newprinter.py b/newprinter.py
+index d7ba8dc..5ff21e0 100644
 --- a/newprinter.py
 +++ b/newprinter.py
 @@ -1064,7 +1064,7 @@ class NewPrinterGUI(GtkGUI):

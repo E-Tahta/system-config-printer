@@ -1,14 +1,16 @@
-From: =?UTF-8?q?Guido=20G=C3=BCnther?= <agx@sigxcpu.org>
+From: =?utf-8?q?Guido_G=C3=BCnther?= <agx@sigxcpu.org>
 Date: Tue, 13 Dec 2011 20:25:07 +0100
 Subject: Disable firewall checks
 
 ---
- firewall.py |   14 ++------------
- 1 files changed, 2 insertions(+), 12 deletions(-)
+ firewallsettings.py | 15 ++-------------
+ 1 file changed, 2 insertions(+), 13 deletions(-)
 
+diff --git a/firewallsettings.py b/firewallsettings.py
+index 06d2077..883c3ae 100644
 --- a/firewallsettings.py
 +++ b/firewallsettings.py
-@@ -222,21 +222,10 @@
+@@ -222,21 +222,10 @@ class SystemConfigFirewall:
              pass
  
      def _check_any_allowed (self, search):

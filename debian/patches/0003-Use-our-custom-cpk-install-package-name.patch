@@ -1,11 +1,13 @@
-From: =?UTF-8?q?Guido=20G=C3=BCnther?= <agx@sigxcpu.org>
+From: =?utf-8?q?Guido_G=C3=BCnther?= <agx@sigxcpu.org>
 Date: Wed, 28 Jul 2010 17:29:05 +0200
 Subject: Use our custom cpk-install-package-name
 
 ---
- installpackage.py |   10 +++-------
- 1 files changed, 3 insertions(+), 7 deletions(-)
+ installpackage.py | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
 
+diff --git a/installpackage.py b/installpackage.py
+index 11f3584..b046a0f 100644
 --- a/installpackage.py
 +++ b/installpackage.py
 @@ -22,9 +22,11 @@
